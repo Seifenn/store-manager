@@ -18,7 +18,10 @@
 
 - Mysql-connector-java-8.0.25
 
-- Scenebuilder-16.0.0-all 
+- Scenebuilder-16.0.0-all
+
+##### Contributions :
+   This project is open for all contributors check the [contributing guidelines](https://github.com/Seifenn/store-manager/blob/main/CONTRIBUTING.md) file to know more about how to contribute and improve this project.
 
 Employee Main Screen :
 ![Interface](https://github.com/Seifenn/store-manager/blob/main/src/images/WorkerUI.PNG)

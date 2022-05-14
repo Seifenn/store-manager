@@ -8,8 +8,9 @@
 
 ##### - Main interfaces :
 
-    - Admin interface fully functional CRUD operations for products and employees connected to MY SQL data base and the ability to display stock and history of sellings.
-    -Employee interface with the ability to add sales and check stock.
+   - Admin interface fully functional CRUD operations for products and employees connected to MY SQL data base and the ability to display stock and history of sellings.
+   
+   - Employee interface with the ability to add sales and check stock.
 
 ##### Libraries :
 
@@ -20,7 +21,7 @@
 - Scenebuilder-16.0.0-all 
 
 Employee Main Screen :
-![Interface](\src\images\WorkerUI.png?raw=true "Main UI")
+![Interface](https://github.com/Seifenn/store-manager/blob/main/src/images/WorkerUI.PNG)
 
 Admin Main Screen :
-![Interface](\src\images\AdminUI.png?raw=true "Main UI")
+![Interface](https://github.com/Seifenn/store-manager/blob/main/src/images/AdminUI.PNG)

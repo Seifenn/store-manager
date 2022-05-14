@@ -25,7 +25,7 @@ _**NOTE**_: Only original source code from you and other people that have signed
 
 ### Contribution guidelines and standards
 
-Before sending your pull request for [Pull requests · Seifenn/store-manager · GitHub] (https://github.com/Seifenn/store-manager/pulls) , make sure your changes are consistent with the guidelines and follow the TensorFlow coding style.
+Before sending your pull request for [review](https://github.com/Seifenn/store-manager/pulls) , make sure your changes are consistent with the guidelines and follow the TensorFlow coding style.
 
 #### General guidelines and philosophy for contribution
 

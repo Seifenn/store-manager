@@ -4,8 +4,8 @@
 
 Before sending your pull requests, make sure you do the following:
 
-- Read the Contributing Guidelines.
-- Read the Code of Conduct.
+- Read the [Contributing Guidelines](https://github.com/Seifenn/store-manager/blob/main/CONTRIBUTING.md).
+- Read the [Code of Conduct](https://github.com/Seifenn/store-manager/blob/main/CODE_OF_CONDUCT.md).
 - Ensure you have signed the Contributor License Agreement (CLA).
 - Check if your changes are consistent with the guidelines.
 - Changes are consistent with the Coding Style.

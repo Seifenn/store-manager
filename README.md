@@ -8,7 +8,7 @@
 
 ##### - Main interfaces :
 
-    - Admin interface fully functional CRUD operations for products and employees connected to MY SQL data base and the ability to display stock and history of sellings.
+   - Admin interface fully functional CRUD operations for products and employees connected to MY SQL data base and the ability to display stock and history of sellings.
     -Employee interface with the ability to add sales and check stock.
 
 ##### Libraries :

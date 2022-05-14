@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="964.0" prefWidth="1600.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AdminController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="-6.0" layoutY="-15.0" prefHeight="979.0" prefWidth="371.0" style="-fx-background-color: #05071f;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="-15.0">
+         <children>
+            <ImageView fitHeight="172.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/DwayneJohnson.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="371.0" style="-fx-background-color: #05071f;" styleClass="text2" stylesheets="@style.css" text="Dwayne Johnson" textFill="#f8f8f8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnHome" alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="100.0" prefWidth="500.0" styleClass="buttonMenu" stylesheets="@style.css" text="Home" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" top="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnStock" alignment="TOP_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="236.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="100.0" prefWidth="500.0" styleClass="buttonMenu" stylesheets="@style.css" text="Stock" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Box_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" top="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnManageProducts" alignment="TOP_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="100.0" prefWidth="500.0" styleClass="buttonMenu" stylesheets="@style.css" text="Manage Products" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Xbox_Menu_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" top="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnShowemployee" alignment="TOP_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="377.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="100.0" prefWidth="500.0" styleClass="buttonMenu" stylesheets="@style.css" text="Employees" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" top="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnManageEmployees" alignment="TOP_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="384.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="100.0" prefWidth="500.0" styleClass="buttonMenu" stylesheets="@style.css" text="Manage Employees" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/new-employee-icon-19.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" top="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnShowHistory" alignment="TOP_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="100.0" prefWidth="500.0" styleClass="buttonMenu" stylesheets="@style.css" text="History of Sellings" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/saleicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" top="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btngetreport" alignment="TOP_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="597.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="100.0" prefWidth="500.0" styleClass="buttonMenu" stylesheets="@style.css" text="Get Report" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Search_52px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" top="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSignout" alignment="TOP_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="100.0" prefWidth="500.0" styleClass="buttonMenu" stylesheets="@style.css" text="Sign Out" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="70.0" top="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane layoutX="373.0" layoutY="2.0" prefHeight="964.0" prefWidth="1229.0">
+         <children>
+            <Pane fx:id="pngetreport" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="1229.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="68.0" prefHeight="103.0" prefWidth="882.0" styleClass="text2" stylesheets="@style.css" text="Employee of the month" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="202.0" layoutY="645.0" prefHeight="155.0" prefWidth="962.0" spacing="72.0">
+                     <children>
+                        <VBox prefHeight="155.0" prefWidth="177.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="86.0" prefWidth="198.0" style="-fx-background-color: #02030A;" text="3000 DT" textFill="#233687">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="199.0" style="-fx-background-color: #02030A;" text="Total profits" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="155.0" prefWidth="181.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="86.0" prefWidth="198.0" style="-fx-background-color: #02030A;" text="2100" textFill="#26bfbc">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="199.0" style="-fx-background-color: #02030A;" text="Products Sold this month" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="155.0" prefWidth="177.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="92.0" prefWidth="177.0" style="-fx-background-color: #02030A;" text="720" textFill="#fa5f7e">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="72.0" prefWidth="195.0" style="-fx-background-color: #02030A;" text="Products sold this week" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="100.0" />
+                     </padding>
+                  </HBox>
+                  <ImageView fitHeight="172.0" fitWidth="121.0" layoutX="562.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/jimmy-fallon.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="410.0" layoutY="444.0" prefHeight="128.0" prefWidth="410.0" style="-fx-background-color: #02030A;" stylesheets="@style.css" text="Jimmy Fallon" textFill="#f8f8f8">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="thumb" />
+                        <String fx:value="text2" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pnManageEmployees" prefHeight="200.0" prefWidth="200.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="829.0" layoutY="283.0" prefHeight="65.0" prefWidth="371.0" styleClass="text2" text="Update Employee" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="350.0" layoutY="33.0" prefHeight="100.0" prefWidth="600.0" stylesheets="@style.css" text="Manage Employees">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.45238095238095233" startY="0.638095238095238">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.25882354378700256" green="0.5529412031173706" blue="0.8901960849761963" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.2549019753932953" green="0.9098039269447327" blue="0.6784313917160034" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <ImageView fitHeight="128.0" fitWidth="96.0" layoutX="1106.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/storemanager.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="29.0" layoutY="283.0" prefHeight="65.0" prefWidth="371.0" styleClass="text2" text="Add Employee" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="429.0" layoutY="283.0" prefHeight="65.0" prefWidth="371.0" styleClass="text2" text="Delete Employee" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="btnaddemp" graphicTextGap="20.0" layoutX="70.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="65.0" prefWidth="300.0" styleClass="lightButton" stylesheets="@style.css" text="Add Employee" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/new-employee-icon-19.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnremoveemp" graphicTextGap="20.0" layoutX="500.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="65.0" prefWidth="300.0" styleClass="lightButton" stylesheets="@style.css" text="Delete Employee" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/remove-employee.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnupdateemp" layoutX="890.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="65.0" prefWidth="300.0" styleClass="lightButton" stylesheets="@style.css" text="Update Employee" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateemployee.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </Pane>
+            <Pane fx:id="pnupdateemployee" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="385.0" layoutY="50.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" text="Update Employee" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="48.0" />
+                     </font>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </Label>
+                  <TextField fx:id="empid_update_field" alignment="CENTER" layoutX="400.0" layoutY="250.0" prefHeight="50.0" prefWidth="500.0" promptText="Employee ID" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="128.0" fitWidth="96.0" layoutX="1108.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/storemanager.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="updateemp_msg" alignment="CENTER" layoutX="298.0" layoutY="830.0" prefHeight="89.0" prefWidth="720.0" styleClass="text2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="empname_update_field" alignment="CENTER" layoutX="50.0" layoutY="450.0" prefHeight="50.0" prefWidth="300.0" promptText="Name" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="150.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" text="Select employee to update" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="350.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" text="Select field to update" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_update_empname" alignment="CENTER" graphicTextGap="10.0" layoutX="400.0" layoutY="450.0" mnemonicParsing="false" onAction="#UpdateEmployee" prefHeight="50.0" prefWidth="200.0" styleClass="lightButton" stylesheets="@style.css" text="Update Name" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btn_update_all_emp" alignment="CENTER" graphicTextGap="10.0" layoutX="400.0" layoutY="780.0" mnemonicParsing="false" onAction="#UpdateEmployee" prefHeight="20.0" prefWidth="500.0" styleClass="lightButton" stylesheets="@style.css" text="Update All" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="empusername_update_field" alignment="CENTER" layoutX="650.0" layoutY="450.0" prefHeight="50.0" prefWidth="300.0" promptText="Username" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btn_update_empusername" alignment="CENTER" graphicTextGap="10.0" layoutX="1000.0" layoutY="450.0" mnemonicParsing="false" onAction="#UpdateEmployee" prefHeight="50.0" prefWidth="200.0" styleClass="lightButton" stylesheets="@style.css" text="Update Username" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TextField fx:id="emplastname_update_field" alignment="CENTER" layoutX="50.0" layoutY="550.0" prefHeight="50.0" prefWidth="300.0" promptText="Last Name" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btn_update_emplastname" alignment="CENTER" graphicTextGap="10.0" layoutX="400.0" layoutY="550.0" mnemonicParsing="false" onAction="#UpdateEmployee" prefHeight="50.0" prefWidth="200.0" styleClass="lightButton" stylesheets="@style.css" text="Update Last name" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TextField fx:id="empCIN_update_field" alignment="CENTER" layoutX="50.0" layoutY="650.0" prefHeight="50.0" prefWidth="300.0" promptText="CIN" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btn_update_empCIN" alignment="CENTER" graphicTextGap="10.0" layoutX="400.0" layoutY="650.0" mnemonicParsing="false" onAction="#UpdateEmployee" prefHeight="50.0" prefWidth="200.0" styleClass="lightButton" stylesheets="@style.css" text="Update CIN" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TextField fx:id="emppassword_update_field" alignment="CENTER" layoutX="650.0" layoutY="550.0" prefHeight="50.0" prefWidth="300.0" promptText="Password" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="empsalary_update_field" alignment="CENTER" layoutX="650.0" layoutY="650.0" prefHeight="50.0" prefWidth="300.0" promptText="Salary" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btn_update_emppassword" alignment="CENTER" graphicTextGap="10.0" layoutX="1000.0" layoutY="550.0" mnemonicParsing="false" onAction="#UpdateEmployee" prefHeight="50.0" prefWidth="200.0" styleClass="lightButton" stylesheets="@style.css" text="Update Password" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btn_update_empsalary" alignment="CENTER" graphicTextGap="10.0" layoutX="1000.0" layoutY="650.0" mnemonicParsing="false" onAction="#UpdateEmployee" prefHeight="50.0" prefWidth="200.0" styleClass="lightButton" stylesheets="@style.css" text="Update Salary" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="pnaddproduct" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="385.0" layoutY="50.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" text="Add Product" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="48.0" />
+                     </font>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </Label>
+                  <TextField fx:id="product_name" alignment="CENTER" layoutX="400.0" layoutY="200.0" prefHeight="80.0" prefWidth="500.0" promptText="Product Name" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnaddproduct" graphicTextGap="20.0" layoutX="480.0" layoutY="800.0" mnemonicParsing="false" onAction="#AddProduct" prefHeight="50.0" prefWidth="350.0" styleClass="lightButton" text="Add Product" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/add-product.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="128.0" fitWidth="96.0" layoutX="1108.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/storemanager.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="addproduct_msg" alignment="CENTER" layoutX="297.0" layoutY="855.0" prefHeight="89.0" prefWidth="720.0" styleClass="text2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="product_brand" alignment="CENTER" layoutX="393.0" layoutY="350.0" prefHeight="80.0" prefWidth="500.0" promptText="Brand" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="product_quantity" alignment="CENTER" layoutX="400.0" layoutY="500.0" prefHeight="80.0" prefWidth="500.0" promptText="Quantity" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="product_price" alignment="CENTER" layoutX="400.0" layoutY="650.0" prefHeight="80.0" prefWidth="500.0" promptText="price" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane fx:id="pnupdateproduct" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="385.0" layoutY="50.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" text="Update Product" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="48.0" />
+                     </font>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </Label>
+                  <TextField fx:id="productid_update_field" alignment="CENTER" layoutX="400.0" layoutY="250.0" prefHeight="50.0" prefWidth="500.0" promptText="Product ID" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btn_update_quantity" alignment="CENTER" graphicTextGap="10.0" layoutX="750.0" layoutY="750.0" mnemonicParsing="false" onAction="#UpdateProduct" prefHeight="50.0" prefWidth="350.0" styleClass="lightButton" stylesheets="@style.css" text="Update Quantity" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="128.0" fitWidth="96.0" layoutX="1108.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/storemanager.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="updateproduct_msg" alignment="CENTER" layoutX="298.0" layoutY="890.0" prefHeight="89.0" prefWidth="720.0" styleClass="text2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="productname_update_field" alignment="CENTER" layoutX="200.0" layoutY="450.0" prefHeight="50.0" prefWidth="500.0" promptText="Product Name" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="150.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" text="Select product to update" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="350.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" text="Select field to update" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="brand_update_field" alignment="CENTER" layoutX="200.0" layoutY="550.0" prefHeight="50.0" prefWidth="500.0" promptText="Brand" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="price_update_field" alignment="CENTER" layoutX="200.0" layoutY="650.0" prefHeight="50.0" prefWidth="500.0" promptText="Price" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="quantity_update_field" alignment="CENTER" layoutX="200.0" layoutY="750.0" prefHeight="50.0" prefWidth="500.0" promptText="Quantity" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btn_update_price" alignment="CENTER" graphicTextGap="10.0" layoutX="750.0" layoutY="650.0" mnemonicParsing="false" onAction="#UpdateProduct" prefHeight="50.0" prefWidth="350.0" styleClass="lightButton" stylesheets="@style.css" text="Update Price" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_update_brand" alignment="CENTER" graphicTextGap="10.0" layoutX="750.0" layoutY="550.0" mnemonicParsing="false" onAction="#UpdateProduct" prefHeight="50.0" prefWidth="350.0" styleClass="lightButton" stylesheets="@style.css" text="Update Brand" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" styleClass="txt">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_update_productname" alignment="CENTER" graphicTextGap="10.0" layoutX="750.0" layoutY="450.0" mnemonicParsing="false" onAction="#UpdateProduct" prefHeight="50.0" prefWidth="350.0" styleClass="lightButton" stylesheets="@style.css" text="Update Product Name" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_update_all_product" alignment="CENTER" graphicTextGap="10.0" layoutX="400.0" layoutY="850.0" mnemonicParsing="false" onAction="#UpdateProduct" prefHeight="20.0" prefWidth="500.0" styleClass="lightButton" stylesheets="@style.css" text="Update All" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="pndeleteproduct" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="50.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" text="Delete Product" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="48.0" />
+                     </font>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </Label>
+                  <TextField fx:id="product_id_delete" alignment="CENTER" layoutX="400.0" layoutY="200.0" prefHeight="100.0" prefWidth="500.0" promptText="Product ID" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btndeleteproduct" graphicTextGap="20.0" layoutX="480.0" layoutY="450.0" mnemonicParsing="false" onAction="#DeleteProduct" prefHeight="100.0" prefWidth="350.0" styleClass="lightButton" text="Delete Product">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/removeproducts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="128.0" fitWidth="96.0" layoutX="1108.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/storemanager.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="deleteproduct_msg" alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="600.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pnManageProducts" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="829.0" layoutY="283.0" prefHeight="65.0" prefWidth="371.0" styleClass="text2" text="Update Products" textAlignment="CENTER" textFill="WHITE">
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="350.0" layoutY="33.0" prefHeight="100.0" prefWidth="600.0" stylesheets="@style.css" text="Manage Products">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.45238095238095233" startY="0.638095238095238">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.25882354378700256" green="0.5529412031173706" blue="0.8901960849761963" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.2549019753932953" green="0.9098039269447327" blue="0.6784313917160034" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <ImageView fitHeight="128.0" fitWidth="96.0" layoutX="1106.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/storemanager.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="29.0" layoutY="283.0" prefHeight="65.0" prefWidth="371.0" styleClass="text2" text="Add Products" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="429.0" layoutY="283.0" prefHeight="65.0" prefWidth="371.0" styleClass="text2" text="Delete Products" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets left="70.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="btnaddprod" graphicTextGap="20.0" layoutX="65.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="65.0" prefWidth="300.0" styleClass="lightButton" stylesheets="@style.css" text="Add product" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/add-product.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btndeleteprod" graphicTextGap="20.0" layoutX="500.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="65.0" prefWidth="300.0" styleClass="lightButton" stylesheets="@style.css" text="Delete Product" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/removeproducts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnupdateprod" graphicTextGap="20.0" layoutX="890.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="65.0" prefWidth="300.0" styleClass="lightButton" stylesheets="@style.css" text="Update Product" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/updateproduct.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="pnaddemployee" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="385.0" layoutY="50.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" text="Add Employee" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="48.0" />
+                     </font>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </Label>
+                  <TextField fx:id="empfirstname" alignment="CENTER" layoutX="400.0" layoutY="200.0" prefHeight="60.0" prefWidth="500.0" promptText="First Name" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnaddemployee" graphicTextGap="20.0" layoutX="480.0" layoutY="800.0" mnemonicParsing="false" onAction="#AddEmployee" prefHeight="50.0" prefWidth="350.0" styleClass="lightButton" text="Add Employee" textFill="#363232">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/new-employee-icon-19.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="128.0" fitWidth="96.0" layoutX="1108.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/storemanager.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="addemp_msg" alignment="CENTER" layoutX="297.0" layoutY="855.0" prefHeight="89.0" prefWidth="720.0" styleClass="text2" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emplastname" alignment="CENTER" layoutX="400.0" layoutY="300.0" prefHeight="60.0" prefWidth="500.0" promptText="Last Name" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="empusername" alignment="CENTER" layoutX="400.0" layoutY="400.0" prefHeight="60.0" prefWidth="500.0" promptText="username" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="emppassword" alignment="CENTER" layoutX="400.0" layoutY="500.0" prefHeight="60.0" prefWidth="500.0" promptText="password" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="empcin" alignment="CENTER" layoutX="400.0" layoutY="600.0" prefHeight="60.0" prefWidth="500.0" promptText="CIN" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="empsalary" alignment="CENTER" layoutX="400.0" layoutY="700.0" prefHeight="60.0" prefWidth="500.0" promptText="Salary" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane fx:id="pnremoveemployee" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="385.0" layoutY="50.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" text="Delete Employee" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="48.0" />
+                     </font>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </Label>
+                  <TextField fx:id="empid_delete_field" alignment="CENTER" layoutX="400.0" layoutY="200.0" prefHeight="100.0" prefWidth="500.0" promptText="Employee ID" styleClass="txt" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnremoveemployee" graphicTextGap="20.0" layoutX="480.0" layoutY="400.0" mnemonicParsing="false" onAction="#DeleteEmployee" prefHeight="100.0" prefWidth="350.0" styleClass="lightButton" text="Delete Employee" textFill="#363232">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/new-employee-icon-19.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="128.0" fitWidth="96.0" layoutX="1108.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/storemanager.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="deleteemp_msg" alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="550.0" prefHeight="60.0" prefWidth="500.0" styleClass="text2" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pnSignout" prefHeight="964.0" prefWidth="1229.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="428.0" layoutY="228.0" prefHeight="103.0" prefWidth="762.0" styleClass="text2" text="Good Bye" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="96.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="128.0" fitWidth="96.0" layoutX="1094.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/storemanager.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="pnShowHistory" layoutX="10.0" layoutY="10.0" prefHeight="938.0" prefWidth="1229.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <VBox fx:id="pnItems1" layoutX="40.0" layoutY="300.0" prefHeight="600.0" prefWidth="1150.0" stylesheets="@style.css">
+                     <children>
+                        <TableView fx:id="table1" layoutX="53.0" layoutY="261.0" prefHeight="677.0" prefWidth="1044.0" stylesheets="@style.css">
+                           <columns>
+                              <TableColumn fx:id="tc_productid1" minWidth="336.0" prefWidth="338.0" text="Product ID" />
+                              <TableColumn fx:id="tc_productname1" prefWidth="241.0" text="Product Name" />
+                              <TableColumn fx:id="tc_brand1" prefWidth="238.0" text="Brand" />
+                              <TableColumn fx:id="tc_quantity1" minWidth="0.0" prefWidth="180.0" text="Quantity Sold" />
+                              <TableColumn fx:id="tc_price1" prefWidth="159.0" text="Price" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <TextField alignment="CENTER" layoutX="928.0" layoutY="36.0" prefHeight="33.0" prefWidth="262.0" promptText="Search" styleClass="txt" stylesheets="@style.css" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="14.0" prefHeight="100.0" prefWidth="400.0" styleClass="text2" text="History of Sellings" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="1160.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Search_52px.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER_LEFT" layoutX="150.0" layoutY="100.0" prefHeight="150.0" prefWidth="850.0" stylesheets="@style.css">
+                     <children>
+                        <VBox prefHeight="0.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="stock_field1" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #02030A;" textFill="#232983">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #02030A;" styleClass="text2" text="Total Stock" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="0.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="prodsold_field1" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #02030A;" textFill="#26bfbc">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #02030A;" styleClass="text2" text="Products Sold" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="0.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="income_field1" alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #02030A;" textFill="#fa5f7e">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #02030A;" styleClass="text2" text="Total Income" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane fx:id="pnHome" prefHeight="200.0" prefWidth="1229.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="198.0" layoutY="68.0" prefHeight="103.0" prefWidth="882.0" styleClass="text2" stylesheets="@style.css" text="Welcome to the store manager admin" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="410.0" fitWidth="451.0" layoutX="418.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/storemanager.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER_LEFT" layoutX="200.0" layoutY="640.0" prefHeight="155.0" prefWidth="850.0" stylesheets="@style.css">
+                     <children>
+                        <VBox prefHeight="155.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="stock_field2" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="10.0" prefHeight="88.0" prefWidth="400.0" style="-fx-background-color: #02030A;" textFill="#232983">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="400.0" style="-fx-background-color: #02030A;" styleClass="text2" stylesheets="@style.css" text="Total Stock" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="155.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="prodsold_field2" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="86.0" prefWidth="400.0" style="-fx-background-color: #02030A;" textFill="#26bfbc">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #02030A;" styleClass="text2" stylesheets="@style.css" text="Products Sold" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="500.0" layoutY="10.0" prefHeight="155.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="income_field2" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="400.0" style="-fx-background-color: #02030A;" textFill="#fa5f7e">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="76.0" prefWidth="400.0" style="-fx-background-color: #02030A;" styleClass="text2" stylesheets="@style.css" text="Total Income" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane fx:id="pnStock" prefHeight="938.0" prefWidth="1229.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <VBox fx:id="pnItems" layoutX="40.0" layoutY="300.0" prefHeight="600.0" prefWidth="1150.0" stylesheets="@style.css">
+                     <children>
+                        <TableView fx:id="table" layoutX="53.0" layoutY="261.0" prefHeight="677.0" prefWidth="1044.0" stylesheets="@style.css">
+                          <columns>
+                              <TableColumn fx:id="tc_productid" minWidth="336.0" prefWidth="338.0" text="Product ID" />
+                            <TableColumn fx:id="tc_productname" prefWidth="241.0" text="Product Name" />
+                            <TableColumn fx:id="tc_brand" prefWidth="238.0" text="Brand" />
+                              <TableColumn fx:id="tc_quantity" minWidth="0.0" prefWidth="139.0" text="Quantity" />
+                              <TableColumn fx:id="tc_price" prefWidth="200.0" text="Price" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <TextField alignment="CENTER" layoutX="928.0" layoutY="36.0" prefHeight="33.0" prefWidth="262.0" promptText="Search" styleClass="txt" stylesheets="@style.css" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="14.0" prefHeight="65.0" prefWidth="152.0" styleClass="text2" text="Stock" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="hbox" alignment="CENTER_LEFT" layoutX="150.0" layoutY="100.0" prefHeight="150.0" prefWidth="850.0" stylesheets="@style.css">
+                     <children>
+                        <VBox prefHeight="0.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="stock_field" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #02030A;" textFill="#232983">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #02030A;" styleClass="text2" text="Total Stock" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="0.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="prodsold_field" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #02030A;" textFill="#26bfbc">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #02030A;" styleClass="text2" text="Products Sold" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="0.0" prefWidth="400.0">
+                           <children>
+                              <Label fx:id="income_field" alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #02030A;" textFill="#fa5f7e">
+                                 <font>
+                                    <Font name="System Bold" size="43.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #02030A;" styleClass="text2" text="Total Income" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="1160.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Search_52px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="pnShowemployees" layoutX="10.0" layoutY="10.0" prefHeight="938.0" prefWidth="1229.0" styleClass="pane" stylesheets="@style.css">
+               <children>
+                  <VBox fx:id="pnItems2" layoutX="40.0" layoutY="250.0" prefHeight="600.0" prefWidth="1150.0" stylesheets="@style.css">
+                     <children>
+                        <TableView fx:id="EmpTable" layoutX="53.0" layoutY="150.0" prefHeight="602.0" prefWidth="1150.0" stylesheets="@style.css">
+                           <columns>
+                              <TableColumn fx:id="tc_empid" minWidth="200.0" prefWidth="201.0" text="Employee ID" />
+                              <TableColumn fx:id="tc_empname" prefWidth="159.0" text="Name" />
+                              <TableColumn fx:id="tc_emplastname" prefWidth="192.0" text="Last Name" />
+                              <TableColumn fx:id="tc_empusername" minWidth="0.0" prefWidth="140.0" text="Username" />
+                              <TableColumn fx:id="tc_emppassword" prefWidth="168.0" text="Password" />
+                              <TableColumn fx:id="tc_empCIN" prefWidth="144.0" text="CIN" />
+                              <TableColumn fx:id="tc_empsalary" prefWidth="145.0" text="Salary" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <TextField alignment="CENTER" layoutX="928.0" layoutY="40.0" prefHeight="33.0" prefWidth="262.0" promptText="Search" styleClass="txt" stylesheets="@style.css" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="40.0" prefHeight="65.0" prefWidth="250.0" styleClass="text2" text="Employees" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="1160.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Search_52px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

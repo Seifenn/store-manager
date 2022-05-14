@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="63.0" prefWidth="1098.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="403.0" style="-fx-background-color: #02030A; -fx-border-color: #0e1125;" styleClass="text2" stylesheets="@../GUI/style.css" text="Chocolate" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="74.0" prefWidth="282.0" style="-fx-background-color: #02030A; -fx-border-color: #0e1125;" styleClass="text2" stylesheets="@../GUI/style.css" text="Lindt" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="91.0" prefWidth="248.0" style="-fx-background-color: #02030A; -fx-border-color: #0e1125;" styleClass="text2" stylesheets="@../GUI/style.css" text="730" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="180.0" style="-fx-background-color: #02030A; -fx-border-color: #0e1125;" styleClass="text2" stylesheets="@../GUI/style.css" text="6.5 DT" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</HBox>
